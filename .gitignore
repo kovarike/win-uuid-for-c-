@@ -1,0 +1,11 @@
+src/test
+src/test/**/*
+src/test/**
+src/test/main.exe
+./src/test/main.exe
+./src/test
+log/
+log
+./log/
+/log/
+/src/test
