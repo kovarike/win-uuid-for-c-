@@ -27,7 +27,7 @@ install(TARGETS uuid_dll uuid_lib
         ARCHIVE DESTINATION lib  # Instalar a uuid.lib
 )
 
-install(FILES include/winid.h DESTINATION include)
+install(FILES src/winid.h DESTINATION include)
 
 # Configurar o arquivo de pacote para que o CMake saiba como usar a biblioteca
 include(CMakePackageConfigHelpers)

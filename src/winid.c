@@ -5,8 +5,8 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <wincrypt.h>
+#include "./winid.h"
 
-#include "../include/winid.h"
 
 // Função de logging
 void log_message(const char *message) {
@@ -126,11 +126,12 @@ int is_unique_uuid(UuidHashTable *table, const char *uuid) {
 }
 
 // Função para copiar UUID para a estrutura User
-void parse(char *out, Uuid *uuid, UuidHashTable *uuid_table) {
+void parse(char *out, Uuid *uuid) { 
+    UuidHashTable *uuid_table = init_uuid_table(INITIAL_SIZE);
     if (out != NULL) {
         strncpy(out, uuid->uuid, SIZE_ID);
         out[SIZE_ID - 1] = '\0';
-
+        
         while (!is_unique_uuid(uuid_table, uuid->uuid)) {
             fprintf(stderr, "UUID duplicado detectado, gerando outro...\n");
             log_message("UUID duplicado detectado, gerando outro...");
@@ -138,10 +139,13 @@ void parse(char *out, Uuid *uuid, UuidHashTable *uuid_table) {
         }
         add_uuid(uuid_table, out);
     } else {
+        
         fprintf(stderr, "Erro: User não pode ser nulo.\n");
         log_message("Erro: User não pode ser nulo.");
         exit(EXIT_FAILURE);
     }
+
+
 }
 
 void generate_random_bytes(unsigned char *buffer, size_t size) {

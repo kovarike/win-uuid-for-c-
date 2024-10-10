@@ -68,4 +68,4 @@ git clone https://github.com/kovarike/win-uuid-for-c.git
 // Sinta-se à vontade para personalizar o conteúdo de acordo com suas necessidades! -->
 
 
-
+<!-- C:\Program Files\Git\bin -->

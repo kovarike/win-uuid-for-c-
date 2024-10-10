@@ -49,6 +49,7 @@ jobs:
         cmake ..
         make
         cp uuid.dll ../tools
+        cp libuuid.dll.a ../tools
         cp uuid.lib ../tools
 
     - name: Set execution policy for PowerShell scripts

@@ -1,0 +1,8 @@
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/uuid_dll.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/uuid_lib.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/edit_cache.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/rebuild_cache.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/list_install_components.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/install.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/install/local.dir
+C:/Users/PID UFOP/documentos/www/build/CMakeFiles/install/strip.dir
