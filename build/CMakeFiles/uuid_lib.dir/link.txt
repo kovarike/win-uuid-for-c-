@@ -1,2 +1,0 @@
-C:\ProgramData\mingw64\mingw64\bin\ar.exe qc uuid.lib CMakeFiles/uuid_lib.dir/src/winid.c.obj
-C:\ProgramData\mingw64\mingw64\bin\ranlib.exe uuid.lib

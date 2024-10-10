@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\uuid_dll.dir/objects.a
-C:\ProgramData\mingw64\mingw64\bin\ar.exe qc CMakeFiles\uuid_dll.dir/objects.a @CMakeFiles\uuid_dll.dir\objects1.rsp
-C:\ProgramData\mingw64\mingw64\bin\gcc.exe -g -shared -o uuid.dll -Wl,--out-implib,libuuid.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\uuid_dll.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\uuid_dll.dir\linkLibs.rsp
