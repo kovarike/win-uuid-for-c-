@@ -46,7 +46,7 @@ jobs:
     - name: Build 
       run: |
         cd build
-        cmake ..
+        cmake -G "MinGW Makefiles" -DCMAKE_C_COMPILER=gcc ..
         make
         cp uuid.dll ../tools
         cp libuuid.dll.a ../tools
