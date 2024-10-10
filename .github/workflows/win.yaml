@@ -56,19 +56,21 @@ jobs:
       run: |
         Set-ExecutionPolicy Bypass -Scope Process -Force
 
-    - name: Set execute permission (Windows PowerShell)
+    - name: Set execute permission (Windows PowerShell) and Submit Chocolatey Package
       run: |
         Set-ExecutionPolicy Bypass -Scope Process -Force 
         ./scripts/*.ps1
-
-    - name: Build Chocolatey Package
-      shell: pwsh
-      run: |
-        pwsh Set-ExecutionPolicy Bypass -File ./scripts/build_choco.ps1
-
-    - name: Submit Chocolatey Package
-      run: |
-        pwsh Set-ExecutionPolicy Bypass -File ./scripts/push_choco.ps1
       env:
         CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+
+    # - name: Build Chocolatey Package
+    #   shell: pwsh
+    #   run: |
+    #     pwsh Set-ExecutionPolicy Bypass -File ./scripts/build_choco.ps1
+
+    # - name: Submit Chocolatey Package
+    #   run: |
+    #     pwsh Set-ExecutionPolicy Bypass -File ./scripts/push_choco.ps1
+    #   env:
+    #     CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
 
