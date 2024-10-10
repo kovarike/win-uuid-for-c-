@@ -14,8 +14,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     <summary>Windows uuid package for C</summary>
     <description>Windows uuid package for C.</description>
     <tags>uuid</tags>
-    <projectUrl>https://github.com/kovarike/win-uuid-for-c</projectUrl>
-    <licenseUrl>https://github.com/kovarike/win-uuid-for-c/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kovarike/win-uuid-for-c-</projectUrl>
+    <licenseUrl>https://github.com/kovarike/win-uuid-for-c-/blob/main/LICENSE</licenseUrl>
   </metadata>
 </package>
 "@ | Set-Content "$toolsDir\$packageName.nuspec"
@@ -28,7 +28,15 @@ Compress-Archive -Path "$toolsDir\*" -DestinationPath $zipPath -Force
 choco pack $toolsDir\$packageName.nuspec
 
 $apiKey = $env:CHOCO_API_KEY
-$package = "$toolsDir\$packageName.$version.nupkg"
+$package = "$PWD\$packageName.$version.nupkg"
 
 # Submeter o pacote para Chocolatey
 choco push $package --api-key=$apiKey --source="https://push.chocolatey.org/"
+
+
+
+# $packagePath = "D:\a\win-uuid-for-c-\win-uuid-for-c-\$packageName.$version.nupkg"
+
+
+
+
