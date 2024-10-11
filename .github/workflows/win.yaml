@@ -77,7 +77,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh release create ${{ github.ref_name }} winid.zip --generate-notes --title "Version ${{ github.ref_name }}"
+        gh release create ${{ github.ref_name }} winid.zip --generate-notes --title "Version ${{ github.ref_name }}v1.0.4"
 
     - name: Set execute permission (Windows PowerShell) and Submit Chocolatey Package
       run: |
