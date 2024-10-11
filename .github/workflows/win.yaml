@@ -67,7 +67,11 @@ jobs:
 
     - name: Zip the winid folder
       run: |
-        Compress-Archive -Path ./winid -DestinationPath ./winid.z
+        Compress-Archive -Path ./winid -DestinationPath ./winid.zip
+
+    - name: Verificar arquivo ZIP
+      run: |
+        Get-ChildItem -Path .\winid.zip
 
     - name: Create GitHub Release
       env:
