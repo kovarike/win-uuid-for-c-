@@ -1,0 +1,6 @@
+Os arquivos binários (uuid.dll, libuuid.dll.a, uuid.lib) foram baixados do repositório oficial do projeto no GitHub: 
+https://github.com/kovarike/win-uuid-for-c-.
+
+A verificação da integridade dos binários foi realizada utilizando o Visual Studio Code (VSCode), que é uma ferramenta de desenvolvimento amplamente utilizada. Durante o processo, foram revisados os códigos fontes e confirmados os hashes dos arquivos, assegurando que correspondem aos binários fornecidos.
+
+Todos os binários estão de acordo com as práticas recomendadas para garantir a segurança e integridade do software.

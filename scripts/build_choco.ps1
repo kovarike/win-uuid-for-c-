@@ -11,10 +11,14 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     <title>UUID for C</title>
     <authors>Danilo Silva</authors>
     <owners>Danilo Silva</owners>
-    <summary>Windows uuid package for C</summary>
-    <description>Windows uuid package for C.</description>
+    <summary>O pacote de UUID (Universally Unique Identifier) no Windows para C permite a criação, manipulação e utilização de identificadores únicos universais em programas escritos em C. Um UUID é um número de 128 bits, que é amplamente utilizado em sistemas de software para identificar informações de forma única, sem a necessidade de coordenar com outras partes.</summary>
+    <description>O pacote de UUID (Universally Unique Identifier) no Windows para C permite a criação, manipulação e utilização de identificadores únicos universais em programas escritos em C. Um UUID é um número de 128 bits, que é amplamente utilizado em sistemas de software para identificar informações de forma única, sem a necessidade de coordenar com outras partes.</description>
     <tags>uuid</tags>
+    <docsUrl>https://github.com/kovarike/win-uuid-for-c-/wiki/winid</docsUrl>
+    <bugTrackerUrl>https://github.com/kovarike/win-uuid-for-c-/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/kovarike/win-uuid-for-c-/releases</releaseNotes>
     <projectUrl>https://github.com/kovarike/win-uuid-for-c-</projectUrl>
+    <packageSourceUrl>https://github.com/kovarike/win-uuid-for-c-</packageSourceUrl>
     <licenseUrl>https://github.com/kovarike/win-uuid-for-c-/blob/main/LICENSE</licenseUrl>
   </metadata>
 </package>
@@ -34,8 +38,6 @@ $package = "$PWD\$packageName.$version.nupkg"
 choco push $package --api-key=$apiKey --source="https://push.chocolatey.org/"
 
 
-
-# $packagePath = "D:\a\win-uuid-for-c-\win-uuid-for-c-\$packageName.$version.nupkg"
 
 
 
