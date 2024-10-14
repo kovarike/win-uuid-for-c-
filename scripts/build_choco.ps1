@@ -1,5 +1,6 @@
 $packageName = "winid"
-$version = $env:TAG_VERSION
+$version = $env:TAG_VERSION.TrimStart('v') -replace '[^0-9\.]', ''
+
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -17,10 +18,10 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
     <tags>uuid</tags>
     <docsUrl>https://github.com/kovarike/win-uuid-for-c-/wiki/winid</docsUrl>
     <bugTrackerUrl>https://github.com/kovarike/win-uuid-for-c-/issues</bugTrackerUrl>
-    <releaseNotes>https://github.com/kovarike/win-uuid-for-c-/releases/tag/$version</releaseNotes>
+    <releaseNotes>https://github.com/kovarike/win-uuid-for-c-/releases/tag/$env:TAG_VERSION</releaseNotes>
     <projectUrl>https://github.com/kovarike/win-uuid-for-c-</projectUrl>
     <packageSourceUrl>https://github.com/kovarike/win-uuid-for-c-</packageSourceUrl>
-    <licenseUrl>https://github.com/kovarike/win-uuid-for-c-/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/kovarike/win-uuid-for-c-/blob/master/LICENSE.txt</licenseUrl>
   </metadata>
 </package>
 "@ | Set-Content "$toolsDir\$packageName.nuspec"
