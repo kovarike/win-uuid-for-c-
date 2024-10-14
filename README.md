@@ -51,7 +51,7 @@ int main() {
 
 ```bash
 <<<<<<< HEAD
-https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
+https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.5
 =======
 https://github.com/kovarike/win-uuid-for-c-/releases
 >>>>>>> f79214ba1f83ad0c8b528fdbef8ad7b9f82c0229
@@ -62,14 +62,14 @@ https://github.com/kovarike/win-uuid-for-c-/releases
 Para instalar a biblioteca `winid`, você pode usar o Chocolatey. Execute os seguintes comandos no terminal:
 
 ```bash
-# Instalar a versão 1.0.4
-choco install winid --version 1.0.4 -y
+# Instalar a versão 1.0.5
+choco install winid --version 1.0.5 -y
 
-# Atualizar para a versão 1.0.4
-choco upgrade winid --version=1.0.4
+# Atualizar para a versão 1.0.5
+choco upgrade winid --version=1.0.5
 
-# Desinstalar a versão 1.0.4
-choco uninstall winid --version=1.0.4
+# Desinstalar a versão 1.0.5
+choco uninstall winid --version=1.0.5
 ```
 
 ## Clonar o Repositório ou Baixar o Arquivo zip
@@ -81,7 +81,7 @@ git clone https://github.com/kovarike/win-uuid-for-c.git
 ```
 ```bash
 
-https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
+https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.5
 ```
 
 ### Licença
