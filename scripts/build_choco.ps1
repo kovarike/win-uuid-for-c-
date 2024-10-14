@@ -1,5 +1,5 @@
 $packageName = "winid"
-$version = $env:TAG_VERSION
+$version = $env:TAG_VERSION.TrimStart('v') -replace '[^0-9\.]', ''
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
