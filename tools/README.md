@@ -1,4 +1,5 @@
 
+
 # Winid
 
 Esta biblioteca fornece funções para gerar UUIDs (Universally Unique Identifiers) em C. O objetivo é facilitar a criação e manipulação de UUIDs em suas aplicações.
@@ -6,7 +7,7 @@ Esta biblioteca fornece funções para gerar UUIDs (Universally Unique Identifie
 ## Exemplo de Uso
 
 - **Geração de UUIDs**: Cria UUIDs usando a função `create_uuid()`.
-- **Parsing de UUIDs**: Converte UUIDs para uma string formatada usando a função `parse()`.
+- **Parsing de UUIDs**: Copia o UUIDs para uma outra variavel usando a função `parse()`.
 
 ### 1. Utilizando o `parse` para copiar o ID gerado para outra variável
 
@@ -46,31 +47,40 @@ int main() {
 }
 
 ```
+## Versões 
 
+```bash
+https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
+```
 
 ## Instalação
 
 Para instalar a biblioteca `winid`, você pode usar o Chocolatey. Execute os seguintes comandos no terminal:
 
 ```bash
-# Instalar a versão 1.0.0
-choco install winid --version 1.0.0 -y
+# Instalar a versão 1.0.4
+choco install winid --version 1.0.4 -y
 
-# Atualizar para a versão 1.0.0
-choco upgrade winid --version=1.0.0
+# Atualizar para a versão 1.0.4
+choco upgrade winid --version=1.0.4
 
-# Desinstalar a versão 1.0.0
-choco uninstall winid --version=1.0.0
+# Desinstalar a versão 1.0.4
+choco uninstall winid --version=1.0.4
 ```
 
-## Clonar o Repositório
+## Clonar o Repositório ou Baixar o Arquivo zip
 
-Se preferir, você pode clonar o repositório diretamente
+Se preferir, você pode clonar o repositório ou baixar o arquivo zip contendo as biblioteca e cabeçalho para ser utilizado.
 
 ```bash
 git clone https://github.com/kovarike/win-uuid-for-c.git
+```
+```bash
+https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
 ```
 
 ### Licença
 
 Este projeto é licenciado sob a [**MIT License**](./LICENSE). Você pode usar, copiar, modificar e distribuir este software, desde que mantenha os avisos de copyright e de permissão nas cópias ou partes substanciais do software. O software é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita.
+
+<!-- git tag -a v1.0.0 -m "Release version 1.0.0"   -->
