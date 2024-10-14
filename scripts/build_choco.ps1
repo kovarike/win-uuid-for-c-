@@ -1,5 +1,6 @@
 $packageName = "winid"
 $version = $env:TAG_VERSION
+
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # Cria o arquivo Nuspec

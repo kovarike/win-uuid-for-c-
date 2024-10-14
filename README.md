@@ -50,7 +50,11 @@ int main() {
 ## Versões 
 
 ```bash
+<<<<<<< HEAD
 https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
+=======
+https://github.com/kovarike/win-uuid-for-c-/releases
+>>>>>>> f79214ba1f83ad0c8b528fdbef8ad7b9f82c0229
 ```
 
 ## Instalação
@@ -76,6 +80,7 @@ Se preferir, você pode clonar o repositório ou baixar o arquivo zip contendo a
 git clone https://github.com/kovarike/win-uuid-for-c.git
 ```
 ```bash
+
 https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
 ```
 
@@ -83,17 +88,19 @@ https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
 
 Este projeto é licenciado sob a [**MIT License**](./LICENSE). Você pode usar, copiar, modificar e distribuir este software, desde que mantenha os avisos de copyright e de permissão nas cópias ou partes substanciais do software. O software é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita.
 
-<!-- git tag -a v1.0.0 -m "Release version 1.0.0"   -->
 
-<!-- # Certifique-se de que você está no branch correto
-git checkout main
+<!-- # git tag -a v1.0.0 -m "Release version 1.0.0"   -->
 
-# Faça suas alterações e adicione-as ao commit
-git add .
-git commit -m "Descrição das alterações"
+ <!-- # Certifique-se de que você está no branch correto
+ git checkout main
 
-# Crie uma nova tag
-git tag v1.0.0
+ Faça suas alterações e adicione-as ao commit
+ git add .
+ git commit -m "Descrição das alterações"
 
-# Empurre a tag para o repositório remoto
-git push origin v1.0.0 -->
+  Crie uma nova tag
+ git tag v1.0.0
+
+ Empurre a tag para o repositório remoto
+ git push origin v1.0.0 -->
+
