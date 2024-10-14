@@ -84,3 +84,16 @@ https://github.com/kovarike/win-uuid-for-c-/releases/tag/v1.0.4
 Este projeto é licenciado sob a [**MIT License**](./LICENSE). Você pode usar, copiar, modificar e distribuir este software, desde que mantenha os avisos de copyright e de permissão nas cópias ou partes substanciais do software. O software é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita.
 
 <!-- git tag -a v1.0.0 -m "Release version 1.0.0"   -->
+
+<!-- # Certifique-se de que você está no branch correto
+git checkout main
+
+# Faça suas alterações e adicione-as ao commit
+git add .
+git commit -m "Descrição das alterações"
+
+# Crie uma nova tag
+git tag v1.0.0
+
+# Empurre a tag para o repositório remoto
+git push origin v1.0.0 -->
